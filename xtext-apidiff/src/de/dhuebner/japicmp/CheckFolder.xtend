@@ -10,6 +10,9 @@ import java.io.File
 import java.io.FileInputStream
 import java.util.Properties
 
+/**
+* Test
+*/
 class CheckFolder {
 
 	def static void main(String[] args) {
@@ -24,13 +27,13 @@ class CheckFolder {
 		val from = properties.getProperty("old.version")
 		val to = properties.getProperty("new.version")
 		if (properties.getProperty("docuName") == null) {
-			properties.setProperty("docuName", '''Xtext API Changes («from» - «to»)''')
+			properties.setProperty("docuName", '''Xtext API Changes (Â«fromÂ» - Â«toÂ»)''')
 		}
 		if (properties.getProperty("old.location") == null) {
-			properties.setProperty("old.location", '''tmf-xtext-Update-«from»/plugins''')
+			properties.setProperty("old.location", '''tmf-xtext-Update-Â«fromÂ»/plugins''')
 		}
 		if (properties.getProperty("new.location") == null) {
-			properties.setProperty("new.location", '''tmf-xtext-Update-«to»/plugins''')
+			properties.setProperty("new.location", '''tmf-xtext-Update-Â«toÂ»/plugins''')
 		}
 		if (properties.getProperty("xmlOutputFile") == null) {
 			properties.setProperty("xmlOutputFile", properties.getProperty("htmlOutputFolder") + "/report.xml")
