@@ -26,6 +26,9 @@ import java.util.jar.JarFile
 import javassist.ClassPool
 import javassist.CtClass
 
+/**
+Test 2
+*/
 class FolderComparator {
 
 	def createReport(Options options, Properties properties) {
